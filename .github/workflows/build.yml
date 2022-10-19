@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: REST API with curl
         run: |
-          curl -k -XPOST http://localhost:8080/api/artifact/upload -F file=@https://raw.githubusercontent.com/microcks/api-lifecycle/master/beer-catalog-demo/api-contracts/Beer%20Catalog%20API.postman_collection.json
+          curl -k -XPOST http://localhost:8080/api/artifact/upload -F file=@car.yml
