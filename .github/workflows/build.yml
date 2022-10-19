@@ -10,11 +10,9 @@ on:
     branches: [ "main"]
 
 jobs:
-  build:
-
+  run-updater:
     runs-on: ubuntu-latest
-
     steps:
-    - name: databricks curl call
-      run: |
-        curl -k -XPOST http://localhost:8080/api/artifact/upload -F file=@C:\Users\pranalighatage\tmp\postman_collection.json
+      - name: REST API with curl
+        run: |
+          curl -k -XPOST http://localhost:8080/api/artifact/upload -F file=@C:\Users\pranalighatage\tmp\postman_collection.json
