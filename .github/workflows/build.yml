@@ -15,4 +15,4 @@ jobs:
     steps:
       - name: REST API with curl
         run: |
-          curl -k -XPOST http://localhost:8080/api/artifact/upload -F file=@car.yml
+          curl -v -k -XPOST http://localhost:8080/api/artifact/upload -F file=@car.yml
